@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sendgikoskilabs-core"
+version = "1.0.0"
+description = "Shared library for the SendgikoskiLabs network tooling suite"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/SendgikoskiLabs/core"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sendgikoskilabs_core*"]
